@@ -7,7 +7,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - id: foo
-        uses: newbold/gh_actions_test@v7
+        uses: newbold/gh_actions_test@v8
+        env: # Or as an environment variable
+          WEBLOG_API_KEY: ${{ secrets.WEBLOG_API_KEY }}
 #        with:
 #          who-to-greet: 'Mona the Octocat'
 #      - run: echo random-number ${{ steps.foo.outputs.random-number }}
