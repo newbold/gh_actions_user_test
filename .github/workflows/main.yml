@@ -1,16 +1,12 @@
 on: [push]
 
 jobs:
-  hello_world_job:
+  weblog_import:
     runs-on: ubuntu-latest
     name: weblog.lol importer
     steps:
       - uses: actions/checkout@v3
-      - id: foo
+      - id: weblog_import
         uses: newbold/gh_actions_test@v9
-        env: # Or as an environment variable
+        env:
           WEBLOG_API_KEY: ${{ secrets.WEBLOG_API_KEY }}
-#        with:
-#          who-to-greet: 'Mona the Octocat'
-#      - run: echo random-number ${{ steps.foo.outputs.random-number }}
-#        shell: bash
