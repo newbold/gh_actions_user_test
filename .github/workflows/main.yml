@@ -3,7 +3,7 @@ on: [push]
 jobs:
   weblog_import:
     runs-on: ubuntu-latest
-    name: weblog.lol importer
+    name: weblog.lol
     steps:
       - uses: actions/checkout@v3
       - id: weblog_import
