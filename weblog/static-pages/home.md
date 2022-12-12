@@ -3,4 +3,4 @@ Location: home
 
 # This is the home page
 
-Welcome to the home page.
+Welcome to the home page!
