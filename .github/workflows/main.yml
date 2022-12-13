@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - id: weblog_import
-        uses: newbold/gh_actions_test@v12
+        uses: newbold/gh_actions_test@v14
         env:
           ADDRESS: adam
           WEBLOG_API_KEY: ${{ secrets.WEBLOG_API_KEY }}
